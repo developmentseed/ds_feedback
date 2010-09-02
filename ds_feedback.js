@@ -8,12 +8,12 @@ Drupal.behaviors.DSFeeback = function(context) {
     $('.block-title', this).click(function() {
       var block = $(this).parents('div.block');
       if (!$(block).is('.ds-feedback-active')) {
-        $('.block-content', block).slideDown('slow');
+        $('.block-content', block).slideDown('fast');
         $(block).addClass('ds-feedback-active');
       }
       else {
         $(block).removeClass('ds-feedback-active');
-        $('.block-content', block).slideUp('slow');
+        $('.block-content', block).slideUp('fast');
       }
     });
   });
