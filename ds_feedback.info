@@ -1,0 +1,7 @@
+core = "6.x"
+dependencies[] = "boxes"
+description = "Allows you to add a contextual popup feedback block."
+features[box][] = "ds_feedback"
+features[ctools][] = "boxes:box:1"
+name = "DS Feedback"
+package = "Features"
