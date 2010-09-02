@@ -15,6 +15,7 @@ function ds_feedback_default_box() {
   $box->options = array(
     'body' => 'Please report any inconsistencies, apparent data errors, or other comments on this page.',
     'format' => '3',
+    'button_title' => 'Send feedback',
   );
 
   $export['ds_feedback'] = $box;
