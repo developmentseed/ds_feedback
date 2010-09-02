@@ -1,3 +1,33 @@
 <?php
 
 include_once('ds_feedback.features.inc');
+
+/**
+ * Implementation of hook_boxes_plugins().
+ */
+function ds_feedback_boxes_plugins() {
+  $info = array();
+  $info['ds_feedback_box'] = array(
+    'title' => 'Feedback box',
+    'handler' => array(
+      'class' => 'ds_feedback_box',
+      'file' => 'ds_feedback_box.inc',
+      'path' => drupal_get_path('module', 'ds_feedback') .'/boxes',
+      'parent' => 'simple',
+    ),
+  );
+  return $info;
+}
+
+/**
+ * Implementation of hook_form_contact_mail_page_alter().
+ */
+function ds_feedback_form_contact_mail_page_alter(&$form, &$form_state) {
+  if (!empty($_GET['subject'])) {
+    $form['subject']['#default_value'] = $_GET['subject'];
+  }
+
+  if (!empty($_GET['content'])) {
+    $form['message']['#default_value'] = $_GET['content'];
+  }
+}

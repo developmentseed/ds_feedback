@@ -9,7 +9,7 @@ function ds_feedback_default_box() {
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
   $box->delta = 'ds_feedback';
-  $box->plugin_key = 'simple';
+  $box->plugin_key = 'ds_feedback_box';
   $box->title = 'Feedback';
   $box->description = 'Feedback';
   $box->options = array(
