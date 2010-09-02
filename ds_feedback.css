@@ -28,7 +28,7 @@
   }
 
   #block-boxes-ds_feedback .block-title:hover,
-  #block-boxes-ds_feedback .ds-feedback-active .block-title { opacity:1; }
+  #block-boxes-ds_feedback.ds-feedback-active .block-title { opacity:1; }
 
 #block-boxes-ds_feedback .block-content {
   border:5px solid #54584c;
