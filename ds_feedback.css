@@ -34,12 +34,22 @@
   border:5px solid #54584c;
   border-bottom:0px;
   display:none;
-  padding:15px 15px 20px;
+	padding:0;
   width:200px;
   background:#fff;
+	color:#333;
   }
 
   #block-boxes-ds_feedback .block-content .buttons {
     padding:20px 0px 0px;
     text-align:center;
     }
+
+	#block-boxes-ds_feedback .block-content .boxes-box {
+		padding:15px 15px 20px;
+		}
+
+#block-boxes-ds_feedback .block-content a.button {
+	padding:5px 10px;
+	background:#273F56;
+	}
