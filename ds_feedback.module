@@ -1,5 +1,5 @@
 <?php
-//
+
 include_once('ds_feedback.features.inc');
 
 /**
@@ -22,7 +22,7 @@ function ds_feedback_boxes_plugins() {
 /**
  * Implementation of hook_form_contact_mail_page_alter().
  */
-function ds_feedback_form_contact_mail_page_alter(&$form, &$form_state) {
+function ds_feedback_form_contact_site_form_alter(&$form, &$form_state) {
   if (!empty($_GET['subject'])) {
     $form['subject']['#default_value'] = $_GET['subject'];
   }

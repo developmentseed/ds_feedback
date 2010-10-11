@@ -43,7 +43,7 @@ class ds_feedback_box extends boxes_simple {
 
     $block = parent::render();
     $block['content'] .= "<div class='buttons'>";
-    $block['content'] .= l($this->options['button_title'], 'contact', array('query' => $query, 'attributes' => array('class' => 'button')));
+    $block['content'] .= l($this->options['button_title'], 'contact', array('query' => $query, 'attributes' => array('class' => array('button'))));
     $block['content'] .= "</div>";
     return $block;
   }
