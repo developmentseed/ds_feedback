@@ -1,7 +1,7 @@
 /**
  * Behavior for expanding/collapsing feedback block.
  */
-Drupal.behaviors.DSFeeback = function(context) {
+Drupal.behaviors.DSFeedback = function(context) {
 
   $('#block-boxes-ds_feedback:not(.ds-feedback-processed)').each(function() {
     $(this).addClass('ds-feedback-processed');
